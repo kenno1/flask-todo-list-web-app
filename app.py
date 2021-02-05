@@ -19,7 +19,7 @@ def index():
 
 
 @app.route('/')
-def index():
+def create():
     return render_template('create.html')
 
 
