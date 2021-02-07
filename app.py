@@ -39,7 +39,7 @@ def create():
 
 
 @app.route('/detail/<int:id>')
-def read():
+def read(id):
     post = Post.query.get(id)
     return render_template('detail.html', post=post)
 
