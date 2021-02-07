@@ -45,7 +45,7 @@ def read(id):
 
 
 @app.route('/delete/<int:id>')
-def read(id):
+def delete(id):
     post = Post.query.get(id)
     db.session.delete(post)
     db.session.commit()
