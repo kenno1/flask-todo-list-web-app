@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<h1>hello world!</h1>
+<h1>Top page</h1>
+{% for post in posts %}
+<h2>Title : {{ post.title }}</h2>
+<p>Due : {{ post.due.date() }}</p>
+{% endfor %}
 {% endblock %}
